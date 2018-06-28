@@ -7,7 +7,7 @@ package com.lepg.Proyecto2;
 
 
 public class Body {
-    
+    int x;
     
     
 }
