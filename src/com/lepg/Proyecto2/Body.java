@@ -7,6 +7,8 @@ package com.lepg.Proyecto2;
 
 
 public class Body {
+    Floor F[];
+    Player P;
     
     
     public Body() {
