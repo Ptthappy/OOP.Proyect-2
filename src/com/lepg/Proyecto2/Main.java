@@ -9,7 +9,10 @@ package com.lepg.Proyecto2;
 public class Main {
         
     public static void main(String args[]) {
-        
+        Body B=Singleton.getBody();
+        do {
+            
+        }while(B==null);
     }
     
 }
