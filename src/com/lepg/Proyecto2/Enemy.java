@@ -6,7 +6,7 @@ package com.lepg.Proyecto2;
  */
 
 
-public class Consumable extends Stuff {
+public abstract class Enemy {
         
     
     
