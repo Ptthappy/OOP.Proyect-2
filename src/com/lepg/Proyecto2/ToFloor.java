@@ -6,7 +6,7 @@ package com.lepg.Proyecto2;
  */
 
 
-public abstract class Trap extends ToFloor {
+public class ToFloor {
         
     
     

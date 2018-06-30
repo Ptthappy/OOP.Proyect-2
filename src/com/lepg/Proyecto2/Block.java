@@ -6,7 +6,7 @@ package com.lepg.Proyecto2;
  */
 
 
-public class Block {
+public class Block extends ToFloor {
         
     
     

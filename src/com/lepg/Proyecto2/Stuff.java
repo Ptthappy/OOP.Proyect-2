@@ -6,7 +6,7 @@ package com.lepg.Proyecto2;
  */
 
 
-public abstract class Stuff {
+public abstract class Stuff extends ToFloor{
         
     
     

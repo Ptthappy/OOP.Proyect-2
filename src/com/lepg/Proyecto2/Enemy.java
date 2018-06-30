@@ -6,8 +6,10 @@ package com.lepg.Proyecto2;
  */
 
 
-public abstract class Enemy {
-        
+public abstract class Enemy extends ToFloor {
+    private double HP;
+    private double dmg;
+    public Stuff loot;
     
     
 }
