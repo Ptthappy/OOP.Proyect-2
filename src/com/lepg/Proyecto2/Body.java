@@ -3,6 +3,8 @@ package com.lepg.Proyecto2;
 
 import java.util.Scanner;
 import java.util.InputMismatchException;
+import java.util.*;
+
 
 /**
  * @author Luis1
@@ -11,9 +13,11 @@ import java.util.InputMismatchException;
 
 public class Body {
     private Scanner s=new Scanner(System.in);
-    Floor F[];
+    Floor F[]=new Floor[100];
     Player P;
     int Iter;
+    HashMap<Integer, ToFloor> map =new HashMap<>();
+    
     
     public Body() throws InterruptedException {
         Dialog.intro();
@@ -49,7 +53,13 @@ public class Body {
     }
     
     
-    void NewGame() {
+    public void NewGame() throws Exception {
+        int i=(int) (Math.random() * 5);
+        
+    }
+    
+    
+    public void createMap() {
         
     }
     

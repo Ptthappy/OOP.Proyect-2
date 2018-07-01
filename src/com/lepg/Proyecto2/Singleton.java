@@ -11,7 +11,7 @@ public class Singleton {
     private static Player P=null;
     
     
-    public static Body getBody() {
+    public static Body getBody() throws InterruptedException {
         if (B==null)    B=new Body();
         
         return B;
