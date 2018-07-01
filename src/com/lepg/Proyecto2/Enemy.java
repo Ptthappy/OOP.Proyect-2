@@ -7,9 +7,15 @@ package com.lepg.Proyecto2;
 
 
 public abstract class Enemy implements ToFloor {
-    private double HP;
-    private double dmg;
+    protected double HP;
+    protected double dmg;
+    protected String name;
+    protected int character;
     public Stuff loot;
+    
+    public Enemy(int n) {
+        character=n;
+    }
     
     
 }

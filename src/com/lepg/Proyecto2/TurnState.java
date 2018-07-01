@@ -6,7 +6,7 @@ package com.lepg.Proyecto2;
  */
 
 
-public class Item extends Stuff {
+public class TurnState {
         
     
     

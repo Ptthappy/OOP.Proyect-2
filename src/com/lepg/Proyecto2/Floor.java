@@ -15,7 +15,8 @@ public class Floor {
     
     
     public Floor(Block B) {  //Se crea un piso con un bloqueo
-        T=new Block();
+        int i=(int)(Math.random()*4);
+        T=new Block(i);
     }
     
     

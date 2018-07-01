@@ -67,17 +67,17 @@ public class Body {
         for (int n=0; n<10;n++)
             for (int m=0; m<10; m++) {
                 occur=Math.random();
-                if (occur<0.05)
+                if (occur<0.15)
                     spawn=0;
-                if (occur>=0.05 && occur<0.1)
+                if (occur>=0.15 && occur<0.2)
                     spawn=1;
-                if (occur>=0.1 && occur<0.55)
+                if (occur>=0.2 && occur<0.65)
                     spawn=2;
-                if (occur>=0.55 && occur<0.60)
-                    spawn=0;
-                if (occur>=0.60 && occur<0.75)
+                if (occur>=0.65 && occur<0.70)
+                    spawn=3;
+                if (occur>=0.70 && occur<0.85)
                     spawn=4;
-                if (occur>=0.75)
+                if (occur>=0.85)
                     spawn=5;
                 if (n!=0 && n!=0)
                     F[n][m]=FloorFactory.getFloor(spawn);
