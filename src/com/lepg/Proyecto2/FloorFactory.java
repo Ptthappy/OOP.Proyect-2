@@ -14,7 +14,7 @@ public class FloorFactory {
     private static NPC N;
     
     
-    public static Floor getFloor(int n) {
+    public static Floor getFloor(byte n) {
         switch(n) {
             case 0:
                 return new Floor();

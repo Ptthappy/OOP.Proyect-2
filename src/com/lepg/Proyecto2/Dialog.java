@@ -2,6 +2,8 @@ package com.lepg.Proyecto2;
 
 
 import java.util.Scanner;
+
+
 /**
  * @author Luis1
  */

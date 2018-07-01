@@ -16,8 +16,8 @@ public class Body {
     Floor F[][]=new Floor[10][10];
     Player P;
     int Iter;
-    double ocur;
-    int spawn;
+    double occur;
+    byte spawn;
     
     
     public Body() {
@@ -58,7 +58,7 @@ public class Body {
     
     
     public void NewGame() {
-        int i=(int) (Math.random() * 5);
+        createMap();
         
     }
     
@@ -66,10 +66,20 @@ public class Body {
     public void createMap() {
         for (int n=0; n<10;n++)
             for (int m=0; m<10; m++) {
-                ocur=Math.random();
-                if (ocur<0.3)
-                    
-                F[n][m]=FloorFactory.getFloor(n);
+                occur=Math.random();
+                if (occur<0.05)
+                    spawn=0;
+                if (occur>=0.05 && occur<0.1)
+                    spawn=1;
+                if (occur>=0.1 && occur<0.55)
+                    spawn=2;
+                if (occur>=0.55 && occur<0.60)
+                    spawn=0;
+                if (occur>=0.60 && occur<0.75)
+                    spawn=4;
+                if (occur>=0.75)
+                    spawn=5;
+                F[n][m]=FloorFactory.getFloor(spawn);
             }
             
             
