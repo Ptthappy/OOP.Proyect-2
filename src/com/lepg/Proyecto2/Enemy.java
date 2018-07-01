@@ -13,7 +13,7 @@ public abstract class Enemy implements ToFloor {
     protected int character;
     public Stuff loot;
     
-    public Enemy(int n) {
+    protected Enemy(int n) {
         character=n;
     }
     

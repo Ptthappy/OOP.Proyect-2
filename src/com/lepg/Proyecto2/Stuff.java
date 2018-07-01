@@ -11,7 +11,7 @@ public abstract class Stuff implements ToFloor{
     protected int character;    
     protected String rarity;
     
-    public Stuff(int n) {
+    protected Stuff(int n) {
         this.character=n;
     }
     
