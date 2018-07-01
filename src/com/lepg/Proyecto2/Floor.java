@@ -19,6 +19,11 @@ public class Floor {
     }
     
     
+    public Floor(NPC N) {  //Se crea un piso con un NPC que desarrolla una mini-historia
+        N=new NPC();
+    }
+    
+    
     public Floor(Enemy E) {  //Se crea un piso con un enemigo
         
     }

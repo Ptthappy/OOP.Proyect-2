@@ -13,22 +13,26 @@ import java.util.*;
 
 public class Body {
     private Scanner s=new Scanner(System.in);
-    Floor F[]=new Floor[100];
+    Floor F[][]=new Floor[10][10];
     Player P;
     int Iter;
-    HashMap<Integer, ToFloor> map =new HashMap<>();
+    double ocur;
+    int spawn;
     
     
-    public Body() throws InterruptedException {
+    public Body() {
         Dialog.intro();
     }
     
     
     public void Iter() {
-        System.out.println("1. Nuevo Juego\n2. Ayuda\n3. Salir");
+        
         
         do {
+            System.out.println("1. Nuevo Juego\n2. Ayuda\n3. Salir");
+            
             try { Iter=s.nextInt(); } 
+            
             catch (InputMismatchException e) {
                 s=null;
                 s=new Scanner(System.in);
@@ -53,14 +57,22 @@ public class Body {
     }
     
     
-    public void NewGame() throws Exception {
+    public void NewGame() {
         int i=(int) (Math.random() * 5);
         
     }
     
     
     public void createMap() {
-        
+        for (int n=0; n<10;n++)
+            for (int m=0; m<10; m++) {
+                ocur=Math.random();
+                if (ocur<0.3)
+                    
+                F[n][m]=FloorFactory.getFloor(n);
+            }
+            
+            
     }
     
     

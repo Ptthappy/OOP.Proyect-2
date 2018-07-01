@@ -11,7 +11,7 @@ public class Singleton {
     private static Player P=null;
     
     
-    public static Body getBody() throws InterruptedException {
+    public static Body getBody() {
         if (B==null)    B=new Body();
         
         return B;
@@ -25,7 +25,7 @@ public class Singleton {
     }
     
     
-    public static void resetPlayer() {
+    public static void resetPlayer() {  //Para una nueva partida
         P=null;
         getPlayer();
         

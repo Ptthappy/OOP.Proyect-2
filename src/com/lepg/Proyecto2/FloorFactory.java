@@ -10,7 +10,9 @@ public class FloorFactory {
     private static Block B;
     private static Enemy E;
     private static Stuff S;
-    private static Trap P;
+    private static Trap T;
+    private static NPC N;
+    
     
     public static Floor getFloor(int n) {
         switch(n) {
@@ -23,7 +25,9 @@ public class FloorFactory {
             case 3:
                 return new Floor(S);
             case 4:
-                return new Floor(P);
+                return new Floor(T);
+            case 5:
+                return new Floor(N);
             default:
                 return null;
         }
