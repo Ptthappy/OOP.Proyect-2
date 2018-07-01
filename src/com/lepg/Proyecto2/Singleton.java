@@ -25,4 +25,11 @@ public class Singleton {
     }
     
     
+    public static void resetPlayer() {
+        P=null;
+        getPlayer();
+        
+    }
+    
+    
 }

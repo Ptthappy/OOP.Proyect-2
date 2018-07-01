@@ -15,19 +15,13 @@ public class Body {
     Player P;
     int Iter;
     
-    public Body() {
-        System.out.println("Este era un día lluvioso en Delta Amacuro. Luis1, un estudiante, acababa de despertar de entre el medio del monte." + 
-                "\nÉl no tenía idea, estaba muy confundido, ya que no podía recordar nada, pero francamente, se había levantado en el medio de la nada" + 
-                "\ndespués de perder la conciencia en senda rumba después de consumir Preveral con Ginebra. Él no sabía nada, debía lidiar con la" + 
-                "\nresaca y las mil y un picadas de insectos que ni siquiera conocía, pero algo era claro, estaba en peligro. No podía pensar claramente" + 
-                ",\npero el olor a guajiro y a tetas de bachaquera eran suficientes para él para darse cuenta que lo que le venía era coñazo. No podía ver" + 
-                "\nnada, pues el monte estaba demasiado largo y denso. Se levantó, y se dio cuenta que casualmente había un palo frente a él, así" +
-                ",\nque lo tomóy se preparó para lo que viniera.");
+    public Body() throws InterruptedException {
+        Dialog.intro();
     }
     
     
     public void Iter() {
-        System.out.println("1. New Game\n2. Help\n3. Exit");
+        System.out.println("1. Nuevo Juego\n2. Ayuda\n3. Salir");
         
         do {
             try { Iter=s.nextInt(); } 
@@ -42,7 +36,7 @@ public class Body {
                     //NewGame();
                     break;
                 case 2:
-                    //Help();
+                    Dialog.help();
                     break;
                 case 3:
                     break;
@@ -53,7 +47,11 @@ public class Body {
         }while(Iter!=3);
         
     }
+    
+    
+    void NewGame() {
         
+    }
     
     
 }

@@ -6,8 +6,8 @@ package com.lepg.Proyecto2;
  */
 
 
-public class ToFloor {
-        
+public interface ToFloor {
+    
     
     
 }
