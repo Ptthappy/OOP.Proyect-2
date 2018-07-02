@@ -14,7 +14,9 @@ public class Dialog {
     public static void help() {
         Scanner s=new Scanner(System.in);
         
-        System.out.println("Hola");
+        System.out.println("El objetivo del juego: Simplemente escapar del verguero");
+        System.out.println("A lo largo del juego te encontrarás con objetos, enemigos, personas (Que por alguna razón están en medio del monte), ");
+        System.out.println("trampas y cosas que bloquearán tu camino");
         System.out.println("Presione enter para continuar...");
         s.nextLine();
     }

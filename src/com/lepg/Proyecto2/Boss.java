@@ -58,7 +58,7 @@ public class Boss extends Enemy {
                 
             case 7:
                 name="Marian";  //Mi ex :(
-                HP=999999999;  //compa esto no es un juego xfabor ayuda :(
+                HP=999999999;  //compa esto no es un juego xfabor ayuda :'((((((((((((((((((((
                 dmg=9999;
                 break;
                 

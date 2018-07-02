@@ -8,6 +8,8 @@ package com.lepg.Proyecto2;
 
 public class Floor {
     ToFloor T;
+    public int i;
+    
     
     public Floor() {  //Se crea un piso vacío
         T=null;
@@ -15,18 +17,19 @@ public class Floor {
     
     
     public Floor(Block B) {  //Se crea un piso con un bloqueo
-        int i=(int)(Math.random()*4);
+        i=(int)(Math.random()*4);
         T=new Block(i);
     }
     
     
     public Floor(NPC N) {  //Se crea un piso con un NPC que desarrolla una mini-historia
-        N=new NPC();
+        i=(int)(Math.random()*8);
+        N=new NPC(i);
     }
     
     
     public Floor(Enemy E) {  //Se crea un piso con un enemigo
-        
+        T=Enemy.get();
     }
     
     

@@ -41,7 +41,7 @@ public class Body {
             
             switch(Iter) {
                 case 1:
-                    //NewGame();
+                    NewGame();
                     break;
                 case 2:
                     Dialog.help();
@@ -84,7 +84,6 @@ public class Body {
                 else
                     F[n][m]=FloorFactory.getFloor((byte)0);
             }
-        
         
     }
     
