@@ -79,10 +79,10 @@ public class Body {
                     spawn=4;
                 if (occur>=0.85)
                     spawn=5;
-                if (n!=0 && n!=0)
+                if (n==0 && m==0)
                     F[n][m]=FloorFactory.getFloor(spawn);
                 else
-                    F[n][m]=FloorFactory.getFloor((byte)0);
+                    F[n][m]=FloorFactory.getFloor(0);
             }
         
     }
