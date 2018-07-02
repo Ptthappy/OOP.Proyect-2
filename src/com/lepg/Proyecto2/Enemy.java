@@ -18,7 +18,6 @@ public abstract class Enemy implements ToFloor {
     }
     
     public static Enemy get() {
-        //7%
         double x=Math.random();
         int n;
         

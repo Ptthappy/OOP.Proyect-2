@@ -65,7 +65,7 @@ public class Consumable extends Stuff {
                 
             case 10:
                 name="Nudes de Carlos Suarez";//SuperdmgInstant
-                rarity="Común";
+                rarity="Legendario";
                 break;
                 
             default:

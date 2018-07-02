@@ -14,5 +14,19 @@ public abstract class Trap implements ToFloor {
         character=n;
     }
     
+    public static Trap get() {
+        double x=Math.random();
+        int n;
+        
+        if(x<(3/7)) {
+            n=(int)(Math.random()*3);
+            return new Dangerous(n);
+        }
+        
+        n=(int)(Math.random()*4);
+        return new Quiz(n);
+        
+    }
+    
     
 }
